@@ -11,7 +11,7 @@ export class CreateUserComponent {
 
   createUser(): void{
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://reqbin.com/echo/post/json");
+    xhr.open("POST", "https://reqres.in/api/users");
     xhr.setRequestHeader("Accept", "application/json");
     xhr.setRequestHeader("Content-Type", "application/json");
 
