@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class DeleteUserComponent {
 
+  deleteUser(): void{
+    var xhr = new XMLHttpRequest();
+    xhr.open("DELETE", "https://reqres.in/api/users/2", true);
+    xhr.onload = function(){
+      console.log(xhr.response);
+      //alluser: AllUser = xhr.response;
+    };
+    xhr.send();
+  }
 }
