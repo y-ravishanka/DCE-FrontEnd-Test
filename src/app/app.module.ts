@@ -6,6 +6,7 @@ import { CreateUserComponent } from './component/create-user/create-user.compone
 import { UpdateUserComponent } from './component/update-user/update-user.component';
 import { ListUserComponent } from './component/list-user/list-user.component';
 import { DeleteUserComponent } from './component/delete-user/delete-user.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DeleteUserComponent } from './component/delete-user/delete-user.compone
     DeleteUserComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
