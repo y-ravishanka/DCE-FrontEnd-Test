@@ -1,1 +1,14 @@
-<p>update-user works!</p>
+<h3>Update User Section: </h3>
+<div>
+    <div class="input_group">
+        <label for="txtName">Name:</label>
+        <input type="text" id="txtName" placeholder="User Name" [(ngModel)]="txtName">
+    </div>
+    <div class="input_group">
+        <label for="txtJob">Job:</label>
+        <input type="text" id="txtJob" placeholder="User Job" [(ngModel)]="txtJob">
+    </div>
+    <div>
+        <button class="my-button-dark" (click)="updateUser()">Update an User</button>
+    </div>
+</div>
